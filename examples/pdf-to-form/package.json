@@ -22,7 +22,7 @@
     "@google/generative-ai": "^0.14.0",
     "@ai-sdk/google": "^1.2.10",
     "dotenv": "^16.4.5",
-    "zod": "^3.23.8",
+    "zod": "^3.25.76",
     "inquirer": "^9.2.23",
     "node-fetch": "^3.3.2",
     "desktop-use": "file:../../ts-sdk"
