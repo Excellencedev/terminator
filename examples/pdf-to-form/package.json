@@ -20,7 +20,7 @@
   "dependencies": {
     "ai": "^4.3.5",
     "@google/generative-ai": "^0.14.0",
-    "@ai-sdk/google": "^1.2.10",
+    "@ai-sdk/google": "^1.2.22",
     "dotenv": "^16.4.5",
     "zod": "^3.23.8",
     "inquirer": "^9.2.23",
