@@ -19,7 +19,6 @@ build/
 dist/
 .vagrant/
 
-.env 
 
 /workflows/
 
@@ -31,3 +30,4 @@ scripts/copy-mcp-binary.ps1
 
 # Local logs
 /logs/
+config.bat

@@ -4,9 +4,9 @@
   "description": "AI-powered UI automation code generator using Vercel AI SDK and Terminator",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "tsx watch src/index.ts"
+    "build": "node init && tsc",
+    "start": "node init && node dist/index.js",
+    "dev": "node init && tsx watch src/index.ts"
   },
   "keywords": [
     "ai",
@@ -33,4 +33,4 @@
     "tsx": "^4.15.6",
     "typescript": "^5.4.5"
   }
-} 
+}

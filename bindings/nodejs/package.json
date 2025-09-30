@@ -49,8 +49,8 @@
   },
   "scripts": {
     "artifacts": "npx napi artifacts",
-    "build": "npm run sync-version && npx napi build --platform --release --strip",
-    "build:debug": "npm run sync-version && npx napi build --platform",
+    "build": "node init && npm run sync-version && npx napi build --platform --release --strip",
+    "build:debug": "node init && npm run sync-version && npx napi build --platform",
     "prepublish:ci": "npm run sync-version",
     "prepublishOnly": "npm run sync-version && npx napi prepublish -t npm",
     "sync-version": "node sync-version.js",
