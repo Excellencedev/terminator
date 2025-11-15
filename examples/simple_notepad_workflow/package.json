@@ -17,7 +17,7 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "build": "tsc",
-    "run": "node dist/index.js"
+    "build": "node init && tsc",
+    "run": "node init && node dist/index.js"
   }
 }
