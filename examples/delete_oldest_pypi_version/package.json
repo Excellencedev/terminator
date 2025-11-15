@@ -1,0 +1,28 @@
+{
+  "name": "delete-oldest-pypi-version",
+  "version": "1.0.0",
+  "description": "TypeScript workflow to delete the oldest PyPI package version",
+  "keywords": [
+    "pypi",
+    "automation",
+    "workflow",
+    "typescript",
+    "package-management"
+  ],
+  "author": "mediar-ai",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/workflow.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/workflow.js",
+    "dev": "tsc && node dist/workflow.js"
+  },
+  "dependencies": {
+    "@mediar-ai/terminator": "^0.22.0",
+    "@mediar-ai/workflow": "^0.22.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "dotenv": "^16.0.0"
+  }
+}
