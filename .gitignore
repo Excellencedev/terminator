@@ -19,7 +19,6 @@ build/
 dist/
 .vagrant/
 
-.env 
 
 /workflows/
 
@@ -43,3 +42,4 @@ mcp.json
 # Editor/IDE specific
 .cursor/
 .history/
+config.bat
