@@ -12,20 +12,20 @@
   ],
   "name": "@mediar-ai/cli",
   "optionalDependencies": {
-    "@mediar-ai/cli-darwin-arm64": "0.23.18",
-    "@mediar-ai/cli-darwin-x64": "0.23.18",
-    "@mediar-ai/cli-linux-x64-gnu": "0.23.18",
-    "@mediar-ai/cli-win32-arm64-msvc": "0.23.18",
-    "@mediar-ai/cli-win32-x64-msvc": "0.23.18"
+    "@mediar-ai/cli-darwin-arm64": "0.23.21",
+    "@mediar-ai/cli-darwin-x64": "0.23.21",
+    "@mediar-ai/cli-linux-x64-gnu": "0.23.21",
+    "@mediar-ai/cli-win32-arm64-msvc": "0.23.21",
+    "@mediar-ai/cli-win32-x64-msvc": "0.23.21"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/mediar-ai/terminator"
   },
   "scripts": {
-    "build": "node ./utils/build-cli.js --release",
-    "build:debug": "node ./utils/build-cli.js --debug",
+    "build": "node init && node ./utils/build-cli.js --release",
+    "build:debug": "node init && node ./utils/build-cli.js --debug",
     "sync-version": "node ./utils/sync-version.js"
   },
-  "version": "0.23.18"
+  "version": "0.23.21"
 }
