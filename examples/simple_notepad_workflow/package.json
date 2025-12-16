@@ -17,8 +17,8 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "build": "tsc && tsc-alias",
-    "run": "node dist/terminator.js"
+    "build": "node init && tsc && tsc-alias",
+    "run": "node init && node dist/terminator.js"
   },
   "devDependencies": {
     "tsc-alias": "^1.8.16"

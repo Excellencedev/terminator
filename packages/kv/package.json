@@ -28,10 +28,10 @@
     "url": "https://github.com/mediar-ai/terminator"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
+    "build": "node init && tsc",
+    "dev": "node init && tsc --watch",
     "test": "jest"
   },
   "types": "dist/index.d.ts",
-  "version": "0.23.36"
+  "version": "0.23.48"
 }

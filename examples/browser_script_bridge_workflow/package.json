@@ -2,7 +2,13 @@
   "name": "browser_script_bridge_workflow",
   "version": "1.0.0",
   "description": "Workflow to test Terminator browser script bridge and edge cases",
-  "keywords": ["terminator", "workflow", "browser", "bridge", "executeBrowserScript"],
+  "keywords": [
+    "terminator",
+    "workflow",
+    "browser",
+    "bridge",
+    "executeBrowserScript"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
@@ -12,7 +18,7 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "build": "tsc",
-    "run": "node dist/index.js"
+    "build": "node init && tsc",
+    "run": "node init && node dist/index.js"
   }
 }

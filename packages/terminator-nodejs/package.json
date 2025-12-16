@@ -41,11 +41,11 @@
     }
   },
   "optionalDependencies": {
-    "@mediar-ai/terminator-darwin-arm64": "0.23.36",
-    "@mediar-ai/terminator-darwin-x64": "0.23.36",
-    "@mediar-ai/terminator-linux-x64-gnu": "0.23.36",
-    "@mediar-ai/terminator-win32-arm64-msvc": "0.23.36",
-    "@mediar-ai/terminator-win32-x64-msvc": "0.23.36"
+    "@mediar-ai/terminator-darwin-arm64": "0.23.48",
+    "@mediar-ai/terminator-darwin-x64": "0.23.48",
+    "@mediar-ai/terminator-linux-x64-gnu": "0.23.48",
+    "@mediar-ai/terminator-win32-arm64-msvc": "0.23.48",
+    "@mediar-ai/terminator-win32-x64-msvc": "0.23.48"
   },
   "repository": {
     "type": "git",
@@ -53,9 +53,9 @@
   },
   "scripts": {
     "artifacts": "npx napi artifacts",
-    "build": "npm run sync-version && npm run build:wrapper && npx napi build --platform --release --strip",
-    "build:debug": "npm run sync-version && npm run build:wrapper && npx napi build --platform",
-    "build:wrapper": "npx esbuild wrapper.ts --outfile=wrapper.js --platform=node --format=cjs --target=es2020",
+    "build": "node init && npm run sync-version && npm run build:wrapper && npx napi build --platform --release --strip",
+    "build:debug": "node init && npm run sync-version && npm run build:wrapper && npx napi build --platform",
+    "build:wrapper": "node init && npx esbuild wrapper.ts --outfile=wrapper.js --platform=node --format=cjs --target=es2020",
     "prepublish:ci": "npm run sync-version && npm run build:wrapper",
     "prepublishOnly": "npm run sync-version && npm run build:wrapper && npx napi prepublish -t npm",
     "sync-version": "node scripts/sync-version.js",
@@ -63,5 +63,5 @@
     "test-hook": "powershell.exe -ExecutionPolicy Bypass -File \"../../.git/hooks/pre-push.ps1\""
   },
   "types": "wrapper.d.ts",
-  "version": "0.23.36"
+  "version": "0.23.48"
 }

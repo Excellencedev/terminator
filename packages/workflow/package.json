@@ -28,7 +28,7 @@
   "main": "dist/index.js",
   "name": "@mediar-ai/workflow",
   "peerDependencies": {
-    "@mediar-ai/terminator": "^0.23.36"
+    "@mediar-ai/terminator": "^0.23.48"
   },
   "publishConfig": {
     "access": "public"
@@ -39,11 +39,11 @@
     "url": "https://github.com/mediar-ai/terminator"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
+    "build": "node init && tsc",
+    "dev": "node init && tsc --watch",
     "test": "jest"
   },
   "type": "commonjs",
   "types": "dist/index.d.ts",
-  "version": "0.23.36"
+  "version": "0.23.48"
 }
